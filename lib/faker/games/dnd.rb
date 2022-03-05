@@ -124,7 +124,7 @@ module Faker
         # This method is deprecated. The implementation will be removed in a near future release.
         # Use `DnD.race` instead.
         #
-        # @deprecated Use {#race} instead.
+        # @deprecated Use {race} instead.
         def species
           warn '`DnD.species` is deprecated. Use `DnD.race` instead.'
 

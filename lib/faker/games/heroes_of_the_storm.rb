@@ -21,7 +21,7 @@ module Faker
         # This method is deprecated. The implementation will be removed in a near future release.
         # Use `HeroesOfTheStorm.class_name` instead.
         #
-        # @deprecated Use {#class_name} instead.
+        # @deprecated Use {class_name} instead.
         def class
           warn '`HeroesOfTheStorm.class` is deprecated. Use `HeroesOfTheStorm.class_name` instead.'
 

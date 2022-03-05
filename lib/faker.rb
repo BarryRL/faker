@@ -62,7 +62,7 @@ module Faker
       # that would match it.  This is a rather simple implementation,
       # so don't be shocked if it blows up on you in a spectacular fashion.
       #
-      # It does not handle ., *, unbounded ranges such as {1,},
+      # It does not handle ., *, unbounded ranges such as \\\{1,\},
       # extensions such as (?=), character classes, some abbreviations
       # for character classes, and nested parentheses.
       #
@@ -71,7 +71,7 @@ module Faker
       #
       # It will take a regex like this:
       #
-      # /^[A-PR-UWYZ0-9][A-HK-Y0-9][AEHMNPRTVXY0-9]?[ABEHMNPRVWXY0-9]? {1,2}[0-9][ABD-HJLN-UW-Z]{2}$/
+      # /^[A-PR-UWYZ0-9][A-HK-Y0-9][AEHMNPRTVXY0-9]?[ABEHMNPRVWXY0-9]? \\\{1,2\}[0-9][ABD-HJLN-UW-Z]\\\{2\}$/
       #
       # and generate a string like this:
       #
@@ -117,7 +117,7 @@ module Faker
 
       # Load formatted strings from the locale, "parsing" them
       # into method calls that can be used to generate a
-      # formatted translation: e.g., "#{first_name} #{last_name}".
+      # formatted translation: e.g., "#\\\{first_name\} #\\\{last_name\}".
       def parse(key)
         fetched = fetch(key)
         parts = fetched.scan(/(\(?)#\{([A-Za-z]+\.)?([^}]+)\}([^#]+)?/).map do |prefix, kls, meth, etc|

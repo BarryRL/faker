@@ -131,8 +131,8 @@ module Faker
         #
         # @param [String | Symbol | nil] tax_order Tax
         # @return [String]
-        # @raises TypeError If `tax_order` cannot be converted into a Symbol
-        # @raises ArgumentError If `tax_order` is not a valid taxonomic order
+        # @raise TypeError If `tax_order` cannot be converted into a Symbol
+        # @raise ArgumentError If `tax_order` is not a valid taxonomic order
         #
         # @example
         #   Faker::Creature::Bird.common_name #=> 'wren'

@@ -7,7 +7,7 @@ module Faker
       # Produces a random simple JSON formatted string.
       #
       # @param width [Integer] Specifies the number of key-value pairs.
-      # @param options [Hash] Specifies a Faker gem class to use for keys and for values, respectably. options_hash = {key: Class.method, value: Class.method}
+      # @param options [Hash] Specifies a Faker gem class to use for keys and for values, respectably. options_hash = \\\{key: Class.method, value: Class.method\
       # @return [Hash{String => String}]
       #
       # @example
@@ -40,7 +40,7 @@ module Faker
       #
       # @param json [Hash{String => String}] Specifies a Json.shallow_json and uses its keys as keys of the nested JSON.
       # @param width [Integer] Specifies the number of nested key-value pairs.
-      # @param options [Hash] Specifies a Faker gem class to use for nested keys and for values, respectably. options_hash = {key: Class.method, value: Class.method}
+      # @param options [Hash] Specifies a Faker gem class to use for nested keys and for values, respectably. options_hash = \\\{key: Class.method, value: Class.method\}
       # @return [Hash{String => String}]
       #
       # @example

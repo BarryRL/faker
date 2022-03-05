@@ -12,7 +12,7 @@ module Faker
         # @return [String]
         #
         # @example
-        # Faker::Religion::Bible.character #=> "Jesus"
+        #   Faker::Religion::Bible.character #=> "Jesus"
         #
         # @faker.version next
         def character
@@ -25,7 +25,7 @@ module Faker
         # @return [String]
         #
         # @example
-        # Faker::Religion::Bible.location #=> "Nasareth"
+        #   Faker::Religion::Bible.location #=> "Nasareth"
         #
         # @faker.version next
         def location
@@ -38,7 +38,7 @@ module Faker
         # @return [String]
         #
         # @example
-        # Faker::Religion::Bible.quote #=> "Seek first the kingdom of God "
+        #   Faker::Religion::Bible.quote #=> "Seek first the kingdom of God "
         #
         # @faker.version next
         def quote
